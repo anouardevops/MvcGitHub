@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "e8LHfPUTy0SytsHn3FFo6IMXyxGeFpFNvFU3pKFFD6a/37AZcMcLjVLg+daCQg79keXxFfn5sRmIjw/it5IJFw==",
+  "success": true,
+  "projectFilePath": "C:\\temp\\learn\\Azure devOps\\GitHub\\GitHubMvcApp\\GitHubMvcApp.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://deomchtfs:8080/tfs/Common/_packaging/core-code-feed/nuget/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
