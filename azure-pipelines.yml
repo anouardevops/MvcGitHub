@@ -1,19 +1,19 @@
 variables:
-  group: mygroup
-  os: Windows
-  environment: Test
+  - group: mygroup 
+  - name: scriptVar 
+    value: Test 
 
 steps:
   - script: 
-     echo $(os)
+     echo $(InputVar)
      echo this is the first Script
     displayName: Step 1
 
   - script: |
-     echo this the second script $(InputVar)
+     echo this the second script $(scriptVar)
     displayName: Step 2
     condition: eq(variables['environment'], 'Test')
 
-  - script: |
+  - script: 
      echo this is the group $(status)
     displayName: Step 3 
