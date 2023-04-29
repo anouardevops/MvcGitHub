@@ -1,4 +1,5 @@
 variables:
+  group: mygroup
   os: Windows
   environment: Test
 
