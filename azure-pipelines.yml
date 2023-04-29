@@ -4,10 +4,11 @@ variables:
 
 steps:
   - script: 
-     echo ${{variables.os}}
+     echo $(os)
      echo this is the first Script
     displayName: Step 1
 
   - script: 
      echo this the second script
     displayName: Step 2
+    condition: $(environment) == 'Test'
