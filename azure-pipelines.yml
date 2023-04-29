@@ -18,7 +18,7 @@ steps:
   - script: |
      echo $(InputVar)
      echo this is the first Script
-     echo Selected Environment ist $(parameters.environment)
+     echo Selected Environment ist ${{parameters.environment}}
     displayName: Step 1
 
   - script: |
