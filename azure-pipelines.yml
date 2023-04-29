@@ -8,7 +8,12 @@ steps:
      echo this is the first Script
     displayName: Step 1
 
-  - script: 
-     echo this the second script
+  - script: |
+     echo this the second script $(InputVar)
     displayName: Step 2
-    condition: eq(variables['environment'], 'Prod')
+    condition: eq(variables['environment'], 'Test')
+
+  - script: |
+     echo this is the group $(gvar1)
+    displayName: Step 2
+    condition: eq(variables['environment'], 'Test')
