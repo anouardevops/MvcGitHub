@@ -16,5 +16,4 @@ steps:
 
   - script: |
      echo this is the group $(status)
-    displayName: Step 2
-    condition: eq(variables['environment'], 'Test')
+    displayName: Step 3 
