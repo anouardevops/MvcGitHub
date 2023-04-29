@@ -4,7 +4,7 @@ variables:
 
 steps:
   - script: 
-     echo $(variables.os)
+     echo ${{variables.os}}
      echo this is the first Script
     displayName: Step 1
 
