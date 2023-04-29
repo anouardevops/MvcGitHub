@@ -2,6 +2,8 @@ variables:
   - group: mygroup 
   - name: scriptVar 
     value: Test 
+  - name: environment 
+    value: Test 
 
 steps:
   - script: 
