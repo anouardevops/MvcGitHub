@@ -23,10 +23,10 @@ steps:
 
   - powershell: |
      Write-Host "##vso[task.setvariable variable=InputVar;]foo"
-     Write-Host $(InputVar)
     displayName: Bash
 
   - script: |
+     echo $(InputVar)
      echo this the second script $(scriptVar)
     displayName: Step 2
     condition: eq(variables['umgebung'], 'Test')
