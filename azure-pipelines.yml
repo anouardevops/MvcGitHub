@@ -2,8 +2,17 @@ variables:
   - group: mygroup 
   - name: scriptVar 
     value: Test 
-  - name: environment 
+  - name: umgebung 
     value: Test 
+
+parameters:
+  - name: environment
+    displayName: 'Welche Server wollen Sie aktualisieren?'
+    default: 'DEV'
+    values:
+      - Dev
+      - Staging
+      - Prod
 
 steps:
   - script: 
@@ -14,7 +23,7 @@ steps:
   - script: |
      echo this the second script $(scriptVar)
     displayName: Step 2
-    condition: eq(variables['environment'], 'Test')
+    condition: eq(variables['umgebung'], 'Test')
 
   - script: 
      echo this is the group $(status)
