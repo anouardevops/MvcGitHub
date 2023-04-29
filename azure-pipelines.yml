@@ -11,4 +11,4 @@ steps:
   - script: 
      echo this the second script
     displayName: Step 2
-    condition: eq($(environment), 'Test')
+    condition: eq(variables[environment], 'Test')
