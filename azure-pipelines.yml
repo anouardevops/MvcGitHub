@@ -19,7 +19,7 @@ steps:
      echo $(InputVar)
      echo this is the first Script
      echo Selected Environment ist ${{parameters.environment}}
-     echo "##vso[task.setvariable variable=InputVar]secretvalue"
+     "##vso[task.setvariable variable=InputVar;]secretvalue"
      echo $(InputVar)
     displayName: Step 1
 
