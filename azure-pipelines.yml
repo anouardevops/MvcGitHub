@@ -1,3 +1,8 @@
 steps:
   - script: 
      echo this is the first Script
+    displayName: Step 1
+
+  - script: 
+     echo this the second script
+    displayName: Step 2
